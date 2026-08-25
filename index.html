@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA MARÉ — Private Estate Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Video Layer (scroll‑controlled) -->
+    <video id="mansionVideo" src="mansion.mp4" muted playsinline preload="auto"></video>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-left">CASA MARÉ</div>
+        <div class="nav-right">
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+            <a href="#" class="nav-cta">Private Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress">
+        <span class="progress-item" data-index="0">01 — Vision</span>
+        <span class="progress-item" data-index="1">02 — Craft</span>
+        <span class="progress-item" data-index="2">03 — Materials</span>
+        <span class="progress-item" data-index="3">04 — Arrival</span>
+        <span class="progress-item" data-index="4">05 — Interiors</span>
+        <span class="progress-item" data-index="5">06 — Legacy</span>
+    </div>
+
+    <!-- Content Sections -->
+    <main class="content">
+
+        <!-- Section 0: Vision (Hero) -->
+        <section class="section hero-section" data-section="0">
+            <div class="section-content liquid-glass">
+                <div class="premium-label">Bespoke Real Estate Services</div>
+                <h1 class="headline">Built from vision.</h1>
+                <p class="supporting-text">A private journey where architecture, design, and service converge.</p>
+            </div>
+        </section>
+
+        <!-- Section 1: Craft -->
+        <section class="section" data-section="1">
+            <div class="section-content">
+                <h1 class="headline">Every detail has purpose.</h1>
+                <p class="supporting-text">Our team guides every step, from concept to completion, ensuring uncompromised quality.</p>
+                <div class="spec-panel liquid-glass">
+                    <p class="spec-title">Our Craft</p>
+                    <p class="spec-detail">Architectural consultation</p>
+                    <p class="spec-detail">Custom design</p>
+                    <p class="spec-detail">Precision engineering</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Materials -->
+        <section class="section" data-section="2">
+            <div class="section-content">
+                <h1 class="headline">Curated in layers.</h1>
+                <p class="supporting-text">We source only the finest materials, transforming raw elements into refined spaces.</p>
+                <div class="material-indicators">
+                    <span class="liquid-glass">Bespoke Design</span>
+                    <span class="liquid-glass">Premium Materials</span>
+                    <span class="liquid-glass">Artistic Collaboration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Arrival -->
+        <section class="section" data-section="3">
+            <div class="section-content">
+                <span class="small-label">Your First Impression</span>
+                <h1 class="headline">Seamless by design.</h1>
+                <p class="supporting-text">We orchestrate every detail, from the initial greeting to the final reveal.</p>
+                <span class="vertical-indicator">01 — Arrival</span>
+            </div>
+        </section>
+
+        <!-- Section 4: Interiors -->
+        <section class="section" data-section="4">
+            <div class="section-content">
+                <span class="small-label">Step Inside</span>
+                <h1 class="headline">Service without boundaries.</h1>
+                <p class="supporting-text">Our concierge anticipates your every need, creating a living experience beyond compare.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Interior Experience -->
+        <section class="section" data-section="5">
+            <div class="section-content">
+                <div class="interior-specs">
+                    <span class="liquid-glass">Bespoke Interiors</span>
+                    <span class="liquid-glass">Art Curation</span>
+                    <span class="liquid-glass">Private Concierge</span>
+                    <span class="liquid-glass">Smart Living</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Reveal -->
+        <section class="section" data-section="6">
+            <div class="section-content">
+                <h1 class="headline">And then...</h1>
+                <h1 class="reveal-headline">The horizon becomes your home.</h1>
+            </div>
+        </section>
+
+        <!-- Section 7: Oceanfront Living -->
+        <section class="section" data-section="7">
+            <div class="section-content">
+                <div class="premium-label">Oceanfront Legacy</div>
+                <h1 class="headline">Where the land meets the sea.</h1>
+                <p class="supporting-text">A curated portfolio of waterfront residences, tailored to your personal story.</p>
+                <div class="property-specs">
+                    <span class="liquid-glass">Private Consultation</span>
+                    <span class="liquid-glass">Architectural Planning</span>
+                    <span class="liquid-glass">Exclusive Portfolio</span>
+                    <span class="liquid-glass">Tailored Viewings</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Final Hero -->
+        <section class="section" data-section="8">
+            <div class="section-content">
+                <h1 class="property-name">Casa Maré</h1>
+                <h1 class="headline">Your private legacy.</h1>
+                <p class="supporting-text">An extraordinary estate service designed for those who expect more from home.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-primary">Explore Our Services</a>
+                    <a href="#" class="cta-secondary">Request a Consultation</a>
+                </div>
+                <span class="scroll-indicator">Scroll to Explore ↓</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact / Footer Section (slides in at the end) -->
+    <section id="contactSection" class="contact-slide">
+        <div class="contact-container">
+            <h2 class="contact-title">Begin Your Journey</h2>
+            <p class="contact-subtitle">Arrange a private consultation with our team.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address" required>
+                <textarea placeholder="Tell us about your vision" rows="4" required></textarea>
+                <button type="submit" class="contact-btn">Request Consultation</button>
+            </form>
+            <footer class="footer">
+                <p>&copy; 2026 CASA MARÉ. All rights reserved.</p>
+                <p class="powered-by">Powered by LAGVNSoftware.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
