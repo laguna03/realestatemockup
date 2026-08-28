@@ -58,6 +58,7 @@ function onScroll() {
 
 video.addEventListener('loadedmetadata', () => {
     videoDuration = video.duration || 10;
+    video.play().catch(() => {});
 });
 
 window.addEventListener('scroll', onScroll, { passive: true });
