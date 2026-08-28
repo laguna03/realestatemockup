@@ -1,4 +1,6 @@
 const video = document.getElementById('mansionVideo');
+video.controls = false;
+video.removeAttribute('controls');
 const sections = document.querySelectorAll('.section');
 const contactSection = document.getElementById('contactSection');
 const progressItems = document.querySelectorAll('.progress-item');
@@ -58,7 +60,6 @@ function onScroll() {
 
 video.addEventListener('loadedmetadata', () => {
     videoDuration = video.duration || 10;
-    video.play().catch(() => {});
 });
 
 window.addEventListener('scroll', onScroll, { passive: true });
