@@ -62,13 +62,25 @@ video.addEventListener('loadedmetadata', () => {
     videoDuration = video.duration || 10;
 });
 
+function primeVideo() {
+    video.play()
+        .then(() => {
+            video.pause();
+            updateVideo();
+        })
+        .catch(updateVideo);
+}
+
 window.addEventListener('scroll', onScroll, { passive: true });
 window.addEventListener('resize', () => {
     scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
     onScroll();
 });
 
-window.addEventListener('load', onScroll);
+window.addEventListener('load', () => {
+    primeVideo();
+    onScroll();
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
